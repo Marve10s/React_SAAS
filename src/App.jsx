@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Slider from "./components/Slider";
+import RoadMap from "./components/RoadMap";
 import { partners } from "./data/partners";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <NavBar />
         <Hero />
         <Slider images={partners} />
+        <RoadMap />
       </div>
     </>
   );

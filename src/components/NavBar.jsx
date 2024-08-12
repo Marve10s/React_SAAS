@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logoURL from "../assets/logo.png";
+import MobileMenu from "./MobileMenu";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 
 const NavBar = () => {
@@ -26,7 +27,7 @@ const NavBar = () => {
         <div className="">
           <img src={logoURL} alt="logo" className="h-20 w-20" />
         </div>
-        <nav>
+        <nav className="hidden md:block">
           <ul className="flex items-center flex-row space-x-4 p-4">
             <li>
               <a href="" className="text-gray-600">
@@ -41,7 +42,7 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="hidden md:block">
           <a
             href="#"
             className="bg-black mx-4 px-4 py-2 rounded-md text-white cursor-pointer"
@@ -55,6 +56,7 @@ const NavBar = () => {
             Sign up
           </a>
         </div>
+        <MobileMenu />
       </div>
     </div>
   );

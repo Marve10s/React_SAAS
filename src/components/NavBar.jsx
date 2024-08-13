@@ -28,7 +28,7 @@ const NavBar = () => {
           <img src={logoURL} alt="logo" className="h-20 w-20" />
         </div>
         <nav className="hidden md:block">
-          <ul className="flex items-center flex-row space-x-4 p-4">
+          <ul className="flex items-center flex-row space-x-4 p-4 ml-24">
             <li>
               <a href="" className="text-gray-600">
                 About Us

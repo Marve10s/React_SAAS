@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Slider from "./components/Slider";
 import RoadMap from "./components/RoadMap";
 import { partners } from "./data/partners";
+import Features from "./components/Features";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Hero />
         <Slider images={partners} />
         <RoadMap />
+        <Features />
       </div>
     </>
   );

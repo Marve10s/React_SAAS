@@ -84,7 +84,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className="container mx-auto text-center p-6">
+    <section id="testimonials" className="container mx-auto text-center p-6">
       <TagLine>Testimonials</TagLine>
       <h2 className="text-3xl font-bold text-center mt-3 mb-8">
         What builders say about us

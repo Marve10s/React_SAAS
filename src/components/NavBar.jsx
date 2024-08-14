@@ -16,29 +16,49 @@ const NavBar = () => {
   });
 
   const defaultClasses = "transition-all absolute inset-0 -z-1";
-
-  let navBarClasses = scrolled
+  const navBarClasses = scrolled
     ? `${defaultClasses} border-b border-black bg-white/75 backdrop-blur-lg`
     : `${defaultClasses} bg-transparent`;
+
+  // Native smooth scroll to section
+  const smoothScrollTo = (id, event) => {
+    event.preventDefault(); // Prevent default link behavior
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="container sticky inset-x-0 top-0 z-30 ">
+    <div className="container sticky inset-x-0 top-0 z-30">
       <div className={navBarClasses}></div>
       <div className="flex items-center justify-between relative">
-        <div className="">
+        <div>
           <img src={logoURL} alt="logo" className="h-20 w-20" />
         </div>
         <nav className="hidden md:block">
           <ul className="flex items-center flex-row space-x-4 p-4 ml-24">
             <li>
-              <a href="" className="text-gray-600">
-                About Us
+              <a
+                href="#testimonials"
+                onClick={(e) => smoothScrollTo("#testimonials", e)}
+                className="text-gray-600"
+              >
+                Testimonials
               </a>
             </li>
             <li>
-              <a href="#features">Features</a>
+              <a
+                href="#features"
+                onClick={(e) => smoothScrollTo("#features", e)}
+              >
+                Features
+              </a>
             </li>
             <li>
-              <a href="#pricing">Pricing</a>
+              <a href="#pricing" onClick={(e) => smoothScrollTo("#pricing", e)}>
+                Pricing
+              </a>
             </li>
           </ul>
         </nav>

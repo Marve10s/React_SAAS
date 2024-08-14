@@ -5,7 +5,7 @@ import TagLine from "./TagLine";
 const Pricing = () => {
   return (
     <section
-      id="pricibg"
+      id="pricing"
       className="flex text-center p-10 items-center justify-center flex-col"
     >
       <TagLine>Pricing</TagLine>

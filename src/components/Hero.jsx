@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="container text-center section flex flex-col">
+    <section id="about" className="container text-center section flex flex-col">
       <Tag>
         <div className="flex items-center cursor-pointer ">
           <span>Nexx v0.1</span>

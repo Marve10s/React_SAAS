@@ -4,6 +4,9 @@ import Slider from "./components/Slider";
 import RoadMap from "./components/RoadMap";
 import { partners } from "./data/partners";
 import Features from "./components/Features";
+import Testimonial from "./components/Testimonial";
+import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -22,6 +25,9 @@ export default function App() {
         <Slider images={partners} />
         <RoadMap />
         <Features />
+        <Testimonial />
+        <Pricing />
+        <Footer />
       </div>
     </>
   );

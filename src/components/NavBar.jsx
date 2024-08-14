@@ -35,10 +35,10 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a href="">Features</a>
+              <a href="#features">Features</a>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
           </ul>
         </nav>
